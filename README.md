@@ -58,7 +58,7 @@ Na raiz do projeto e com o ambiente virtual ativado:
 python -m uvicorn app.api:APP --reload
 ```
 
-A API ficará disponível em `http://localhost:8000`. A documentação interativa do FastAPI está em `http://localhost:8000/docs`.
+A API ficará disponível em `http://127.0.0.1:8000`. A documentação interativa do FastAPI está em `http://127.0.0.1:8000/docs`.
 
 Rotas principais:
 
