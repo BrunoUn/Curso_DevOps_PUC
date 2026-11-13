@@ -56,9 +56,17 @@ jobs:
           tags: ${{ vars.DOCKERHUB_USER }}/tarefas:2.0
   deploy:
     needs: [entrega, build]
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-slim
     steps:
       - name: Deploy hook
-        run: curl -X GET ${{ secrets.RENDER_DEPLOY_HOOK }}
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$RENDER_DEPLOY_HOOK" ]; then
+            echo "::error::Configure o RENDER_DEPLOY_HOOK nas configurações do repositório."
+            exit 1
+          fi
+          curl --fail --show-error --silent --request GET --url "$RENDER_DEPLOY_HOOK"
       
     
