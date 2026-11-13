@@ -1,0 +1,11 @@
+fastapi[standard]
+httpx2
+pytest
+pytest-cov
+pylint
+bandit
+ruff
+sqlmodel
+sqlalchemy
+pymysql
+psycopg[binary]
