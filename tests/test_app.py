@@ -114,7 +114,7 @@ def test_autor(cliente: TestClient):
     resposta = cliente.get("/autor")
 
     assert resposta.status_code == 200
-    assert resposta.json() == {"mensagem": "Pedro Rocha Horchulhack"}
+    assert resposta.json() == {"mensagem": "Bruno Navarro Chilante"}
 
 def test_rota_inexiste(cliente: TestClient):
     resposta = cliente.get("/rota_inexistente")

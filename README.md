@@ -39,6 +39,15 @@ $env:DATABASE_ADDRESS = "localhost:5432"
 $env:DATABASE = "nome_do_banco"
 ```
 
+No Bash (Linux, macOS ou Codespaces), configure as mesmas variáveis no terminal em que iniciará a API:
+
+```bash
+export DATABASE_USERNAME="seu_usuario"
+export DATABASE_PASSWORD="sua_senha"
+export DATABASE_ADDRESS="localhost:5432"
+export DATABASE="nome_do_banco"
+```
+
 O banco informado precisa existir. Ao iniciar, a aplicação cria as tabelas do modelo se elas ainda não existirem.
 
 ### Iniciar a API
