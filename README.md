@@ -1,4 +1,6 @@
 # API de tarefas — Curso de DevOps da PUC
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBrunoUn%2FCurso_DevOps_PUC.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBrunoUn%2FCurso_DevOps_PUC?ref=badge_shield)
+
 
 Aplicação de gerenciamento de tarefas desenvolvida com FastAPI. A API permite criar, listar, consultar, concluir e remover tarefas armazenadas em PostgreSQL. O repositório também contém uma aplicação simples para notificar a conclusão de tarefas.
 
@@ -95,3 +97,7 @@ python -m pytest
 ## Docker e automação
 
 O `Dockerfile` descreve a imagem da API. O workflow em `.github/workflows/python-app.yml` instala as dependências, executa o Pylint e os testes, publica a imagem Docker e aciona o deploy configurado no GitHub Actions.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBrunoUn%2FCurso_DevOps_PUC.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FBrunoUn%2FCurso_DevOps_PUC?ref=badge_large)
