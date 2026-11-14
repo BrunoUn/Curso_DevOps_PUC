@@ -31,10 +31,10 @@ jobs:
         pylint app -d W1203
     - name: Test with pytest
       env:
-        DATABASE_USERNAME: root 
-        DATABASE_PASSWORD: root 
+        DATABASE_USERNAME: postgres 
+        DATABASE_PASSWORD: admin 
         DATABASE_ADDRESS: localhost 
-        DATABASE: devops
+        DATABASE: curso_devops
       run: |
         pytest --rootdir app
   entrega:
